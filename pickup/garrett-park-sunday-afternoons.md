@@ -1,5 +1,7 @@
 ---
 title: Garrett Park Sunday Afternoons
+layout: layouts/page.njk
+permalink: pickup/{{ title | slug }}/index.html
 name: Emily Beeson
 address: 1100 E Chet Smith Ave, Derby, KS 67037
 discussion: https://www.facebook.com/groups/389550797774243

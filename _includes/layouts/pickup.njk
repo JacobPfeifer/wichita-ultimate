@@ -1,31 +1,13 @@
 ---
 layout: layouts/base.njk
 section: pickup
+permalink: /pickup/index.html
 ---
+<h1>{{ title }}</h1>
 
-<article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      {{ frequency }} by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
-    </small>
-  </p>
+{{ layoutContent | safe }}
 
-  {{ layoutContent | safe }}
+{% set pickuplist = collections.pickup-games %}
+{% include "components/pickuplist.njk" %}
 
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
-
-</article>
-
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+test

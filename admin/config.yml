@@ -69,4 +69,4 @@ collections:
       - {label: "Address", name: "address", widget: "string"}
       - {label: "When", name: "frequency", widget: "string"}
       - {label: "Online Discussion", name: "discussion", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Description", name: "body", widget: "markdown"}

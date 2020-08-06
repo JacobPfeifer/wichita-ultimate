@@ -1,0 +1,8 @@
+{
+    "layout": "layouts/page.njk",
+    "permalink": "pickup/{{ title | slug }}/index.html",
+    "tags": [
+      "pickup"
+    ]
+  }
+  
