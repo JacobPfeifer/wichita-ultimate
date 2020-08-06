@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 ### How does competitive ultimate work?
 
-### Strapi Stuff
+### Netlify CMS
 
 Logo
 
