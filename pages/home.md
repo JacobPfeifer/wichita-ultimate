@@ -7,14 +7,11 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome
+### Mission
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+Wichita Ultimate, founded in 2014, is committed to the growth and development of the sport of ultimate frisbee. We strive to grow the ultimate community in the Wichita area, as well as in the Midwest. Our goal is to make ultimate fun, competitive, and accessible for all ages and skill levels. We encourage competition, sportsmanship and Spirit of the game.
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
+### Sign up for newsletter [Include to be used on every article]
 
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
-
-Or click the button below to deploy your own copy of this project to Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Want to read this article directly in your inbox? The best way to stay up to date on Wichita Ultimate updates and events is signing for our newsletter.
+Sign up for our newsletter

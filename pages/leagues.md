@@ -4,7 +4,7 @@ date: 2020-08-06T11:59:35.192Z
 permalink: /leagues/index.html
 eleventyNavigation:
   order: 2
-  key: leagues
+  key: Leagues
 ---
 ### WHO
 Anyone 14 years and older

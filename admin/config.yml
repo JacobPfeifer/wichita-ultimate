@@ -24,6 +24,7 @@ collections:
         collection: "authors"
         searchFields: ["name", "github"]
         valueField: "name"
+      - { label: "Header Image", name: "header-img", widget: "image" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -32,7 +33,7 @@ collections:
     label: "Page"
     folder: "pages"
     create: True
-    slug: "{{slug}}"
+    slug: "{{fields.fields.name}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -55,3 +56,17 @@ collections:
       - {label: "Email", name: "email", widget: "string"}
       - {label: "GitHub", name: "github", widget: "string"}
       - {label: "Avatar", name: "avatar", widget: "image"}
+  # Pickup Games
+  - name: "pickup-games"
+    label: "Pickup"
+    folder: "pickup"
+    create: true
+    slug: "{{fields.title}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Mainainer's Name", name: "name", widget: "string"}
+      - {label: "Maintainter's Email", name: "email", widget: "string"}
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "When", name: "frequency", widget: "string"}
+      - {label: "Online Discussion", name: "discussion", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
