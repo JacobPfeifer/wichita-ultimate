@@ -1,7 +1,30 @@
-{% for game in collections.pickup-games %}
-
-{{ game.data.title }}
-
-{% endfor %}
-
-TEST
+<section>
+	{% for game in pickuplist %}
+		<article{% if game.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ game.url | url }}">
+					{% if game.data.title %}
+						{{ game.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if game.data.address %}
+				<p>
+					{{ game.data.address }}
+				</p>
+			{% endif %}
+            {% if game.data.frequency %}
+				<p>
+					{{ game.data.frequency }}
+				</p>
+			{% endif %}
+            {% if game.data.discussion %}
+				<p>
+					{{ game.data.discussion }}
+				</p>
+			{% endif %}
+		</article>
+	{% endfor %}
+</section>

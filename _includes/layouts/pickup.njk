@@ -7,7 +7,6 @@ permalink: /pickup/index.html
 
 {{ layoutContent | safe }}
 
-{% set pickuplist = collections.pickup-games %}
+{% set pickuplist = collections.pickup %}
 {% include "components/pickuplist.njk" %}
-
-test
+{% include "components/pickupform.njk" %}
