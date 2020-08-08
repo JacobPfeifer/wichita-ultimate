@@ -18,8 +18,8 @@ module.exports = function(eleventyConfig) {
 
   // Merge data instead of overriding
   // https://www.11ty.dev/docs/data-deep-merge/
-  eleventyConfig.setDataDeepMerge(true);
 
+  eleventyConfig.setDataDeepMerge(true);
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
