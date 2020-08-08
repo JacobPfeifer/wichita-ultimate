@@ -1,0 +1,15 @@
+<section>
+	{% for author in authorslist %}
+		<article{% if author.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ author.url | url }}">
+					{% if author.data.name %}
+						{{ author.data.name}}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+		</article>
+	{% endfor %}
+</section>

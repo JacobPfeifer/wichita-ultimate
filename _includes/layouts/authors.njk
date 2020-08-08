@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+section: authors
+permalink: /authors/index.html
+---
+<h1>{{ title }}</h1>
+
+{{ layoutContent | safe }}
+
+{% set authorslist = collections.authors %}
+{% include "components/authorslist.njk" %}
+
