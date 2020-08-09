@@ -3,25 +3,30 @@ $color  : #888888;
     $color  : #888888;
     $bgColor: #fffdfa;
     $fontFamily: "Lucida Grande", "Trebuchet MS", sans-serif;
+
+    .container {
+        @extend .clearfix;
+        display: block;
+        margin: 50px auto;
+        max-width: 700px;
+        //background-color: white;
+    }
     
-    form, ul, li, input, label {
+    form, div, input, label {
         box-sizing: border-box;
         display: block;
     }
     
-    ul {
+    div {
         background-color: $bgColor;
         border: 5px solid $color;
-        list-style-type: none;
-        margin: 3em auto;
+        margin: 8px;
         padding: 0;
-        width: 350px;
     }
-    
-    li {
-        border-bottom: 1px solid lighten($color, 25);
-        margin-top: -1px; // border collapser
-        position: relative;
+
+    .hidden {
+        border: none;
+        margin: 0;
     }
     
     label, input {
@@ -62,3 +67,4 @@ $color  : #888888;
     
     }
 }
+
