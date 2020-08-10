@@ -70,12 +70,6 @@ collections:
       - {label: "When", name: "frequency", widget: "string"}
       - {label: "Online Discussion", name: "discussion", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
-  # Leauges
-    - name: "leagues"
-    label: "Leagues"
-    folder: "leagues"
-    create: true
-    slug: "{{fields.title}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
+  # Leagues
+
    
