@@ -1,6 +1,6 @@
 ---
-title: "KWCH Where's Shane? Playing Ultimate Frisbee"
-date: "2019-04-02"
+title: KWCH Where's Shane? Playing Ultimate Frisbee
+date: 2019-04-02T00:00:00.000Z
 author: Kristina Ast
 summary: Wichita Ultimate Summer League live on KWCH!
 tags:

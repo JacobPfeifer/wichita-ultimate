@@ -1,6 +1,6 @@
 ---
 title: Wichita Ultimate Summer League 2019 Week 2
-date: "2018-06-05"
+date: 2018-06-05T00:00:00.000Z
 tags:
     - wusl19
 author: Jordan Ast

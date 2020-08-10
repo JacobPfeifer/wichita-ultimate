@@ -1,6 +1,6 @@
 ---
-title: "Impact Preseason Scrimmage 2019"
-date: "2019-04-18"
+title: Impact Preseason Scrimmage 2019
+date: 2019-04-18T00:00:00.000Z
 summary: Warm up for the upcoming club season with a competitive mixed scrimmage
 tags:
   - impact

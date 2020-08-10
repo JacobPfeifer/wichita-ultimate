@@ -1,6 +1,6 @@
 ---
-title: "Friends Ultimate Nation Hat Tournament 2019"
-date: "2019-04-08"
+title: Friends Ultimate Nation Hat Tournament 2019
+date: 2019-04-08T00:00:00.000Z
 author: Jacob Pfeifer
 summary: Friends Ultimate Nation is hosting their annual Hat Tournament on Sunday April 14th!
 tags:

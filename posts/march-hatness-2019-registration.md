@@ -1,6 +1,6 @@
 ---
-title: "March Hatness 2019 Registration Open"
-date: "2019-02-19"
+title: March Hatness 2019 Registration Open
+date: 2019-02-19T00:00:00.000Z
 summary: Wichita Ultimate is hosting and Indoor Hat Tournament
 tags:
     - tournament

@@ -1,6 +1,6 @@
 ---
-title: "March Hatness 2019 Photo Album"
-date: "2019-04-11"
+title: March Hatness 2019 Photo Album
+date: 2019-04-11T00:00:00.000Z
 tags:
     - tournament
 summary: Check out the photos taken at March Hatness

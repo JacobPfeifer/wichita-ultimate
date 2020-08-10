@@ -1,6 +1,6 @@
 ---
-title: "WUSL 2019 Registration Open"
-date: "2019-04-02"
+title: WUSL 2019 Registration Open
+date: 2019-04-02T00:00:00.000Z
 tags:
     - wusl19
     - league
