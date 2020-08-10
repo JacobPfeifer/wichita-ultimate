@@ -1,4 +1,5 @@
 ---
+layout: layouts/tournaments.njk
 title: Local Tournaments
 date: 2020-08-06T12:07:26.039Z
 permalink: /tournaments/index.html
@@ -6,6 +7,7 @@ eleventyNavigation:
   order: 4
   key: Tournaments
 ---
+
 ### Netlify CMS
  - String: Title
  - String: Maintainer Name
