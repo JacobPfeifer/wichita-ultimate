@@ -13,7 +13,7 @@ const Page = createClass({
 
         ${this.props.widgetFor("body")}
       </main>
-    `;
+    ;
   }
 });
 
