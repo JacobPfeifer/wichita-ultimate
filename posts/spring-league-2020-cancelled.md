@@ -1,5 +1,5 @@
 ---
-title: Spring League 2020 Cancelled
+title: Spring League '20 Cancelled
 date: 2020-03-17T00:00:00.000Z
 author: Jacob Pfeifer
 header-img: /static/img/wichita-ultimate-logo-white.png
