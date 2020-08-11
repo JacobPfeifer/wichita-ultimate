@@ -1,5 +1,5 @@
 ---
-title: WUSPL20 is Almost Here!
+title: Spring League '20 Is Almost Here!
 date: 2020-03-12T02:58:00.000Z
 author: Jacob Pfeifer
 header-img: /static/img/wuspl20-registration-closes-sunday-march-15.jpg
