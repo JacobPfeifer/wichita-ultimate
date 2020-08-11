@@ -1,6 +1,6 @@
 ---
 title: Registration For Lover's Quarrel Mixed Hat Tournament Closes Soon!
-date: 2020-08-11T03:09:15.289Z
+date: 2020-02-07T04:12:00.000Z
 author: Jacob Pfeifer
 header-img: /static/img/lover-s-quarrel-2020.png
 summary: Registration Closes Sunday February 9th!
