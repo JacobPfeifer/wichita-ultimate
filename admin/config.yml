@@ -4,12 +4,11 @@ backend:
   repo: JacobPfeifer/wichita-ultimate
 
 # Comment below to disable drafts
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
 collections:
-  # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
     folder: "posts" # The path to the folder where the documents are stored
@@ -24,15 +23,15 @@ collections:
         collection: "authors"
         searchFields: ["name", "github"]
         valueField: "name"
-      - { label: "Header Image", name: "header-img", widget: "image" }
+      - { label: "Header Image", name: "img", widget: "image" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Our pages e.g. About
+
   - name: "pages"
     label: "Page"
     folder: "pages"
-    create: True
+    create: False
     slug: "{{fields.fields.name}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -45,7 +44,7 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Authors
+
   - name: "authors"
     label: "Author"
     folder: "authors"
@@ -56,7 +55,7 @@ collections:
       - {label: "Email", name: "email", widget: "string"}
       - {label: "GitHub", name: "github", widget: "string"}
       - {label: "Avatar", name: "avatar", widget: "image"}
-  # Pickup Games
+
   - name: "pickup-games"
     label: "Pickup"
     folder: "pickup"
@@ -70,6 +69,5 @@ collections:
       - {label: "When", name: "frequency", widget: "string"}
       - {label: "Online Discussion", name: "discussion", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
-  # Leagues
-
+  
    

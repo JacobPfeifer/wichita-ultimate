@@ -2,7 +2,7 @@
 title: Lover's Quarrel 2020 - Mixed Hat Tournament
 date: 2020-01-18T04:15:00.000Z
 author: Jacob Pfeifer
-header-img: /static/img/lover-s-quarrel-2020-header.png
+img: /static/img/lover-s-quarrel-2020-header.png
 summary: Registration Open Now!
 tags:
   - post

@@ -4,6 +4,7 @@ date: 2019-02-19T00:00:00.000Z
 summary: Wichita Ultimate is hosting and Indoor Hat Tournament
 tags:
     - tournament
+    - marchhatness19
 author: Jacob Pfeifer
 ---
 March Hatness is an indoor mixed-gender hat tournament hosted by Wichita Ultimate! We wanted to take advantage of the new indoor facility at the Stryker Sports Complex while the weather is still crummy. The field is a full-size soccer field with rubber turf. Cleats are recommended!

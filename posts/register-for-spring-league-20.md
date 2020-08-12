@@ -2,11 +2,12 @@
 title: "Register for Spring League '20 "
 date: 2020-03-01T04:03:00.000Z
 author: Jacob Pfeifer
-header-img: /static/img/wuspl-2020-registration-opens-tuesday-march-3rd.jpg
+img: /static/img/wuspl-2020-registration-opens-tuesday-march-3rd.jpg
 summary: WUSPL 20 Registration open Tuesday, March 3rd
 tags:
   - post
   - WUSPL20
+  - league
 ---
 [Register for Wichita Ultimate Spring League!](https://ultimatecentral.com/en_us/e/wusl-indoor-2020)
 

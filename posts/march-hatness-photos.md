@@ -3,6 +3,7 @@ title: March Hatness 2019 Photo Album
 date: 2019-04-11T00:00:00.000Z
 tags:
     - tournament
+    - marchhatness19
 summary: Check out the photos taken at March Hatness
 author: Jacob Pfeifer
 ---

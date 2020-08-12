@@ -2,7 +2,7 @@
 title: Spring League '20 Cancelled
 date: 2020-03-17T00:00:00.000Z
 author: Jacob Pfeifer
-header-img: /static/img/wichita-ultimate-logo-white.png
+img: /static/img/wichita-ultimate-logo-white.png
 summary: Wichita Ultimate Spring League 2020 has been cancelled due to concerns
   over COVID-19
 tags:
