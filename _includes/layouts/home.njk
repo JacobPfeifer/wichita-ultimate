@@ -3,7 +3,9 @@ layout: layouts/base.njk
 section: home
 ---
 {# Content from Body #}
-{{ layoutContent | safe }}
+<div class="markdown">
+    {{ layoutContent | safe }}
+</div>
 
 {# Recent Posts #}
 {% set postslist = collections.post %}

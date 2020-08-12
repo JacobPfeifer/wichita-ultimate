@@ -8,10 +8,6 @@ module.exports = {
       fontFamily: {
         body: ['Avenir', 'sans-serif']
       },
-      container: {
-        center: true,
-        padding: '4rem',
-      },
       screens: {
         sm: '640px',
         md: '768px',
@@ -207,7 +203,10 @@ module.exports = {
         outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
         none: 'none',
       },
-      container: {},
+      container: {
+        center: true,
+        padding: '2rem',
+      },
       cursor: {
         auto: 'auto',
         default: 'default',

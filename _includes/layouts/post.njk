@@ -13,7 +13,9 @@ section: post
     </small>
   </p>
 
-  {{ layoutContent | safe }}
+  <div class="markdown">
+      {{ layoutContent | safe }}
+  </div>
 
   {% if tags %}
     <p>

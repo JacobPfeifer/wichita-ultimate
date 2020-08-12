@@ -1,12 +1,13 @@
-
-<section>
-	{% for post in postslist | reverse  %}
-		{% if postlimit %}
-			{% if loop.index0 < postlimit %} 
-				{% include "components/postpreview.njk" %}
+<div class="container p-8">
+	<section>
+		{% for post in postslist | reverse  %}
+			{% if postlimit %}
+				{% if loop.index0 < postlimit %} 
+					{% include "components/postpreview.njk" %}
+				{% endif %}	
+				{% else %}
+					{% include "components/postpreview.njk" %}
 			{% endif %}	
-			{% else %}
-				{% include "components/postpreview.njk" %}
-		{% endif %}	
-	{% endfor %}
-</section>
+		{% endfor %}
+	</section>
+</div>
