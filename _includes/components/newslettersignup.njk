@@ -1,83 +1,85 @@
-<h3>Sign up for  our newsletter!</h3>
+<div class="container">
+  <h2>Sign up for  our newsletter!</h2>
 
-<p>Want to read this article directly in your inbox? The best way to stay up to date on Wichita Ultimate updates and events is signing for our newsletter.
-Sign up for our newsletter</p>
+  <p>Want to read this article directly in your inbox? The best way to stay up to date on Wichita Ultimate updates and events is signing for our newsletter.
+  Sign up for our newsletter</p>
 
-<div class="containter">
-  <form 
-    class="itaf"
-    id="newsletter"
-    method="POST"
-    data-netlify="true" 
-    netlify-honeypot="bot-field"
-  >
-    <div class="hidden" hidden aria-hidden="true">
-      <label> Don’t fill this out if you're human: 
-        <input name="bot-field" />
-      </label>
-    </div>
-    <div>
-      <label for="first-name">First Name</label>
-      <input
-        type="text"
-        name="metadata__first"
-        id="metadata__first" 
-        autocomplete="given-name"
-        placeholder="Your First Name"
-        title="Please enter your first name"
-        required/>
-    </div>
-    <div>
-      <label for="last-name">Last Name</label>
-      <input
-        type="text"
-        name="metadata__last"
-        id="metadata__last" 
-        autocomplete="family-name"
-        placeholder="Your Last Name"
-        title="Please enter your last name"
-        required/>
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        autocomplete="email"
-        placeholder="Your Email Address"
-        title="The domain portion of the email address is invalid (the portion after the @)."
-        pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-        required
-      />
-    </div>
-    <div>
-      <h4>What do want to receive emails about?</h4>
-      <div>
-        <input
-          type="checkbox"
-          name="tag"
-          value="leagues"
-          checked
-        />Upcoming Leagues
+  <div class="">
+    <form 
+      class="itaf"
+      id="newsletter"
+      method="POST"
+      data-netlify="true" 
+      netlify-honeypot="bot-field"
+    >
+      <div class="hidden" hidden aria-hidden="true">
+        <label> Don’t fill this out if you're human: 
+          <input name="bot-field" />
+        </label>
       </div>
       <div>
+        <label for="first-name">First Name</label>
         <input
-          type="checkbox"
-          name="tag"
-          value="tournaments"
-          checked
-        />Local Tournaments
+          type="text"
+          name="metadata__first"
+          id="metadata__first" 
+          autocomplete="given-name"
+          placeholder="Your First Name"
+          title="Please enter your first name"
+          required/>
       </div>
       <div>
+        <label for="last-name">Last Name</label>
         <input
-          type="checkbox"
-          name="tag"
-          value="events"
-          checked
-        />Clinics and Events
+          type="text"
+          name="metadata__last"
+          id="metadata__last" 
+          autocomplete="family-name"
+          placeholder="Your Last Name"
+          title="Please enter your last name"
+          required/>
       </div>
-    </div>
-    <button type="submit" name="submit">SIGN UP</button>
-  </form>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          placeholder="Your Email Address"
+          title="The domain portion of the email address is invalid (the portion after the @)."
+          pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+          required
+        />
+      </div>
+      <div>
+        <h4>What do want to receive emails about?</h4>
+        <div>
+          <input
+            type="checkbox"
+            name="tag"
+            value="leagues"
+            checked
+          />Upcoming Leagues
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="tag"
+            value="tournaments"
+            checked
+          />Local Tournaments
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="tag"
+            value="events"
+            checked
+          />Clinics and Events
+        </div>
+      </div>
+      <button type="submit" name="submit">SIGN UP</button>
+    </form>
+  </div>
 </div>

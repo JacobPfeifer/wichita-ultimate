@@ -17,6 +17,9 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        primary: '#f56565',
+        secondary: '#667eea',
+        tertiary: '#fff5f5', 
   
         black: '#000',
         white: '#fff',
@@ -703,7 +706,7 @@ module.exports = {
       lineHeight: ['responsive'],
       listStylePosition: ['responsive'],
       listStyleType: ['responsive'],
-      margin: ['responsive'],
+      margin: ['responsive, first, last, even, odd'],
       maxHeight: ['responsive'],
       maxWidth: ['responsive'],
       minHeight: ['responsive'],
