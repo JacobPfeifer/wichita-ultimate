@@ -25,6 +25,18 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
   });
 
+
+  // Tailwind CSS 
+  eleventyConfig.setUseGitIgnore(false);
+
+  eleventyConfig.addWatchTarget("./_tmp/style.css");
+
+  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+
+  eleventyConfig.addShortcode("version", function () {
+    return String(Date.now());
+  });
+
   // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");

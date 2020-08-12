@@ -1,0 +1,31 @@
+@tailwind base;
+
+body {
+    @apply bg-gray-100;
+
+}
+
+h1 {
+    @apply text-2xl;
+}
+h2 {
+    @apply text-xl;
+}
+h3 {
+    @apply text-lg;
+}
+a {
+    @apply text-blue-600 underline;
+}
+
+a[href]:not(:hover) {
+	@apply no-underline;
+}
+
+a[data-current="current item"] {
+	@apply bg-gray-500
+}
+
+@tailwind components;
+
+@tailwind utilities;

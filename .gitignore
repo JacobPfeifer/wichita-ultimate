@@ -3,3 +3,4 @@ node_modules/
 package-lock.json
 wichita-ultimate.code-workspace
 .env
+/_tmp

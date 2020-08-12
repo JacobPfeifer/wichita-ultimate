@@ -1,4 +1,4 @@
-<article {% if post.url == url %} data-current="current item"{% endif %}>
+<article class="mb-4 pb-4 border-b-1 border-gray-100" {% if post.url == url %} data-current="current item"{% endif %}>
     <h3>
         <a href="{{ post.url | url }}">
             {% if post.data.title %}
@@ -23,7 +23,7 @@
             {% for tag in post.data.tags %}
             {%- if tag != "post" -%}
                 {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+            <a href="{{ tagUrl | url }}" rel="tag" class="inline-block align-top uppercase tracking-widest text-xs px-2 leading-8 h-8 border-gray-900 border-solid border rounded mr-2 mb-2 last:m-0">{{ tag }}</a>
             {%- endif -%}
             {% endfor %}
         </p>
