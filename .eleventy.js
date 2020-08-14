@@ -29,7 +29,7 @@ module.exports = function(eleventyConfig) {
   // Tailwind CSS 
   eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addWatchTarget("./static/css/style.css");
+  eleventyConfig.addWatchTarget("./src/_includes/assets/static/css/style.css");
 
   eleventyConfig.addPassthroughCopy("src/static");
 
