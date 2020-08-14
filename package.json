@@ -1,10 +1,10 @@
 {
-  "name": "eleventy-netlify-boilerplate",
-  "version": "1.0.3",
-  "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
+  "name": "wichita-ultimate",
+  "version": "1.0.0",
+  "description": "The home for all things Wichita Ultimate.",
   "scripts": {
-    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss styles/tailwind.css --o _site/style.css",
-    "serve": "npx @11ty/eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
+    "build": "npx @11ty/eleventy & NODE_ENV=production postcss src/_includes/assets/css/main.css --o _site/_includes/assets/css/main.css",
+    "serve": "npx @11ty/eleventy --serve & postcss src/_includes/assets/css/main.css --o _site/_includes/assets/css/main.css --watch",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -20,7 +20,6 @@
   "homepage": "https://wichitaultimate.com/",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "gulp": "^4.0.2",
     "luxon": "^1.22.2",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.7",
@@ -29,6 +28,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.5",
+    "autoprefixer": "^9.8.6",
     "clean-css": "^4.2.1",
     "dotenv": "^8.2.0",
     "html-minifier": "^4.0.0",
@@ -36,4 +36,3 @@
     "uglify-es": "^3.3.9"
   }
 }
-

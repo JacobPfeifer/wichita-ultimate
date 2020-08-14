@@ -1,13 +1,15 @@
 module.exports = {
-    purge: [],
+    purge: {
+      content: ["_site/**/*.html"],
+      options: {
+        whitelist: [],
+      },
+    },
     target: 'relaxed',
     prefix: '',
     important: false,
     separator: ':',
     theme: {
-      fontFamily: {
-        body: ['Avenir', 'sans-serif']
-      },
       screens: {
         sm: '640px',
         md: '768px',
@@ -17,9 +19,11 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        primary: '#f56565',
-        secondary: '#667eea',
-        tertiary: '#fff5f5', 
+        primary: '#638475',
+        secondary: '#3F3047',
+        tertiary: '#90E39A', 
+        quaternary: '#BAA7B0',
+        quinary: '#F7EEEF',
   
         black: '#000',
         white: '#fff',
@@ -249,6 +253,7 @@ module.exports = {
           '"Helvetica Neue"',
           'Arial',
           '"Noto Sans"',
+          'Avenir',
           'sans-serif',
           '"Apple Color Emoji"',
           '"Segoe UI Emoji"',
