@@ -29,9 +29,9 @@ module.exports = function(eleventyConfig) {
   // Tailwind CSS 
   eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
+  eleventyConfig.addWatchTarget("./static/css/style.css");
 
-  eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
+  eleventyConfig.addPassthroughCopy("src/static");
 
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
@@ -118,6 +118,6 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       data: "_data",
       output: "_site"
-    }
+    },
   };
 };

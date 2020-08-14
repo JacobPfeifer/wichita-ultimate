@@ -1,5 +1,5 @@
 ---
 layout: layouts/authors.njk
 title: Authors
-permalink: /Authors/index.html
+permalink: /authors/index.html
 ---
