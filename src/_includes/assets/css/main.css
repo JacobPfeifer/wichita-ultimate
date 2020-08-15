@@ -1,21 +1,23 @@
 @tailwind base;
 
 body {
-    @apply bg-gray-100;
+    @apply bg-quinary;
+    @apply text-secondary;
+
 
 }
 
 h1 {
-    @apply text-2xl;
+    @apply leading-tight text-4xl font-semibold mb-4 mt-4 pb-2;
 }
 h2 {
-    @apply text-xl;
+    @apply leading-tight text-2xl font-semibold mb-4 mt-4 pb-2;
 }
 h3 {
-    @apply text-lg;
+    @apply leading-snug text-lg font-semibold mb-4 mt-4;
 }
 a {
-    @apply text-blue-600 underline;
+    @apply text-primary underline;
 }
 
 a[href]:not(:hover) {
@@ -23,7 +25,7 @@ a[href]:not(:hover) {
 }
 
 a[data-current="current item"] {
-	@apply bg-tertiary
+	@apply bg-quaternary;
 }
 
 
@@ -56,11 +58,11 @@ a[data-current="current item"] {
 }
 
 .markdown h1 {
-    @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+    @apply leading-tight text-4xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h2 {
-    @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+    @apply leading-tight text-2xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h3 {
