@@ -5,6 +5,7 @@ permalink: /leagues/index.html
 eleventyNavigation:
   order: 2
   key: Leagues
+  summary: Leagues offer a range of competitive levels but our recreational leagues, like Sumer League, are super beginner friendly.  Nearly everyone in the Wichita Ultimate community plays summer league, so you'll get the chance to play alongside other skilled players in an atmosphere built around having fun. 
 ---
 ### WHO
 Anyone 14 years and older

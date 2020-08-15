@@ -1,11 +1,12 @@
 ---
-layout: layouts/tournaments.njk
-title: Local Tournaments
+layout: layouts/events.njk
+title: Local Events
 date: 2020-08-06T12:07:26.039Z
-permalink: /tournaments/index.html
+permalink: /events/index.html
 eleventyNavigation:
-  order: 4
-  key: Tournaments
+  order: 3
+  key: Events
+  summary: Events hosted by wichita ultimate offer a wide variety of competion and skill level. Check out each event for more details.
 ---
 
 ### Netlify CMS

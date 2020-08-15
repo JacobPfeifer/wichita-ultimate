@@ -6,6 +6,7 @@ permalink: /pickup/index.html
 eleventyNavigation:
   order: 1
   key: Pickup
+  summary: Pickup Games are the lowest barrier to entry way to play! If you aren't sure if you want to commit to a league or other event, finding a recreational pickup game is a great place to meet new people and learn the basics. 
 ---
 ### How Do I Play in Pickup Games?
 

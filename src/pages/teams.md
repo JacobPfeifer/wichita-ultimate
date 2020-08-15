@@ -1,10 +1,12 @@
 ---
 title: Club Teams
+
 date: 2020-08-06T12:02:26.726Z
 permalink: /teams/index.html
 eleventyNavigation:
-  order: 3
+  order: 4
   key: Teams
+  summary: Club Teams offer the highest competition level available to players. Teams have regular practice and travel to neighboring cities and states to compete. 
 ---
 ### How does competitive ultimate work?
 
