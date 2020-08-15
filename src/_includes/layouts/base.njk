@@ -4,14 +4,13 @@
 	{% include "components/head.njk" %}
 
 	<body class="grid">
-
-		<header>
-			<em class="block text-4xl font-bold not-italic">
-				<div class="container">
-					<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-				</div>
-			</em>
-			<div class="container">
+		<header class="relative bg-primary shadow-md">
+			<div class="container flex">
+				<img class="h-12 py-2 pr-px" src="/static/img/wichita-ultimate-logo-white.png">
+				<a class="text-quinary text-2xl font-thin m-auto" href="{{ '/' | url }}">{{ metadata.title }}</a>
+				<div class="w-10"></div>
+			</div>
+			<div class="container bg-primary">
 				{% include "components/nav.njk" %}
 			</div>
 		</header>

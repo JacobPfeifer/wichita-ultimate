@@ -1,14 +1,15 @@
-<section>
+<section class="">
     {% set navPages = collections.all | eleventyNavigation %}
     <ul class="">
     {%- for entry in navPages %}
         <li class="">
-        <a class="" href="{{ entry.url | url }}">{{ entry.title }}</a>
-        {% if page.url === "/" %}
-            {{ entry.summary }}
-        {% else %}
-            False
-        {% endif %}
+            <a class="" href="{{ entry.url | url }}">{{ entry.title }}</a>
+            <p>
+            {% if page.url === "/" %}
+                {{ entry.summary }}
+            {% else %}
+            {% endif %}
+            </p>
         </li>
     {%- endfor %}
     </ul>
