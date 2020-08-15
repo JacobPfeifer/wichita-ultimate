@@ -2,9 +2,16 @@
 layout: layouts/base.njk
 section: home
 ---
-{# Content from Body #}
-<div class="markdown container">
-    {{ layoutContent | safe }}
+{# Play Ultimate #}
+<div class="container">
+    <h2>Play Ultimate in Wichita!</h2>
+    {% include "components/playultimate.njk" %}
+</div>
+
+{# New To Ultimate? #}
+<div class="container">
+    <h2>New To Ultimate?</h2>
+    {% include "components/newtoultimate.njk" %}
 </div>
 
 {# Recent Posts #}
@@ -15,7 +22,16 @@ section: home
     {% include "components/postslist.njk" %}
 </div>
 
+{# Content From Body - Mission #}
+<div class="markdown container">
+    {{ layoutContent | safe }}
+</div>
+
+
 {# Newsletter signup #}
 <div class="container">
+    <h2>Sign up for  our newsletter!</h2>
+    <p>Want to read this article directly in your inbox? The best way to stay up to date on Wichita Ultimate updates and events is signing for our newsletter.
+    Sign up for our newsletter</p>
     {% include "components/newslettersignup.njk" %}
 </div>

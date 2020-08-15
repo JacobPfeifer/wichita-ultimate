@@ -8,13 +8,13 @@ body {
 }
 
 h1 {
-    @apply leading-tight text-4xl font-semibold mb-4 mt-4 pb-2;
+    @apply leading-tight text-4xl font-semibold my-4;
 }
 h2 {
-    @apply leading-tight text-2xl font-semibold mb-4 mt-4 pb-2;
+    @apply leading-tight text-2xl font-semibold my-4;
 }
 h3 {
-    @apply leading-snug text-lg font-semibold mb-4 mt-4;
+    @apply leading-snug text-lg font-semibold my-4;
 }
 a {
     @apply text-primary underline;

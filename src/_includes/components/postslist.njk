@@ -1,14 +1,13 @@
-<div>
-	<section>
-		{% for post in postslist | reverse  %}
-			{% if postlimit %}
-				{% if loop.index0 < postlimit %} 
-					{% include "components/postpreview.njk" %}
-				{% endif %}	
-				{% else %}
-					{% include "components/postpreview.njk" %}
+
+<section class="flex flex-wrap justify-between">
+	{% for post in postslist | reverse  %}
+		{% if postlimit %}
+			{% if loop.index0 < postlimit %} 
+				{% include "components/postpreview.njk" %}
 			{% endif %}	
-		{% endfor %}
-		<a href="{{ '/blog/' | url }}">View all posts</a>
-	</section>
-</div>
+			{% else %}
+				{% include "components/postpreview.njk" %}
+		{% endif %}	
+	{% endfor %}
+</section>
+<a href="{{ '/blog/' | url }}">View all posts</a>
