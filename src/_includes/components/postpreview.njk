@@ -1,4 +1,4 @@
-<article class="mb-8 lg:mr-4 lg:last:mr-0 bg-white rounded-lg shadow-md .flex-initial w-full lg:w-5/16 " {% if post.url == url %} data-current="current item"{% endif %}>
+<article class="mb-8 lg:mr-4 lg:last:mr-0 relative flex flex-col flex-initial bg-white rounded-lg shadow-md w-full lg:w-5/16" {% if post.url == url %} data-current="current item"{% endif %}>
     <div class="relative pb-9/16">
         <a href="{{ post.url | url }}">
             <img class="absolute top-0 object-cover h-full w-full rounded-t-lg"src="{{ post.data.img }}" alt="">
@@ -14,11 +14,12 @@
         </a>
     </h3>
     {% if post.data.summary %}
-        <p class="mb-2 px-2">
-            {{ post.data.summary }}
-        </p>
+    <p class="mb-auto px-2 ">
+        {{ post.data.summary }}
+    </p>
     {% endif %}
-    <div class="flex px-2 pb-2">
+    <div class="flex p-2 mt-auto items-end">
+        <div class="flex">
             {% if post.data.tags %}
                 {% for tag in post.data.tags %}
                 {%- if tag != "post" -%}
@@ -27,11 +28,12 @@
                 {%- endif -%}
                 {% endfor %}
             {% endif %}
-        <span class="inline-block ml-auto mt-auto">
+        </div>
+        <div class="inline-block ml-auto">
             <time datetime="{{ post.date | machineDate }}">
                 <span class="text-sm">{{ post.date | readableDate }}</span>
             </time>
             <a class="text-sm" href="/authors/{{ post.data.author | slug }}/">{{ post.data.author }}</a>
-        </span>
+        </div>
     </div>
 </article>

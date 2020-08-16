@@ -8,11 +8,6 @@ section: home
     {% include "components/playultimate.njk" %}
 </div>
 
-{# New To Ultimate? #}
-<div class="container">
-    <h2>New To Ultimate?</h2>
-    {% include "components/newtoultimate.njk" %}
-</div>
 
 {# Recent Posts #}
 <div class="container">
@@ -20,6 +15,12 @@ section: home
     {% set postslist = collections.post %}
     {% set postlimit = 3 %}
     {% include "components/postslist.njk" %}
+</div>
+
+{# New To Ultimate? #}
+<div class="container">
+    <h2>New To Ultimate?</h2>
+    {% include "components/newtoultimate.njk" %}
 </div>
 
 {# Content From Body - Mission #}
