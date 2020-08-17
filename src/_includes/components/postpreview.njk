@@ -24,7 +24,7 @@
                 {% for tag in post.data.tags %}
                 {%- if tag != "post" -%}
                     {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-                <a href="{{ tagUrl | url }}" rel="tag" class="inline-block align-top uppercase tracking-widest text-xs px-2 leading-6 h-6 bg-white border-primary border-solid border rounded mr-2 hover:bg-secondary hover:text-quinary hover:no-underline hover:border-secondary" >{{ tag }}</a>
+                <a href="{{ tagUrl | url }}" rel="tag" class="inline-block bg-white hover:bg-secondary h-6 px-3 mr-2 text-primary hover:text-quinary text-xs uppercase tracking-widest leading-6 border border-primary hover:border-secondary border-solid rounded-full hover:no-underline" >{{ tag }}</a>
                 {%- endif -%}
                 {% endfor %}
             {% endif %}

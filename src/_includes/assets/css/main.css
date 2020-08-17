@@ -3,8 +3,6 @@
 body {
     @apply bg-quinary;
     @apply text-secondary;
-
-
 }
 
 h1 {
@@ -27,6 +25,25 @@ a[href]:not(:hover) {
 a[data-current="current item"] {
 	@apply bg-quaternary;
 }
+
+input:focus + label {
+    @apply text-blue-500;
+    @apply font-semibold;
+    @apply tracking-tight;
+}
+
+input:focus:required:invalid + label {
+    @apply text-red-500;
+    @apply font-semibold;
+    @apply tracking-tight;
+}
+
+input:required:valid + label {
+    @apply text-green-500;
+    @apply font-semibold;
+    @apply tracking-tight;
+}
+
 
 
 .markdown {
