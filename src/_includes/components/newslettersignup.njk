@@ -64,41 +64,44 @@
     </div>
     <div>
       <h4 class="mb-4">What do want to receive emails about?</h4>
-      <div class="mb-2 flex content-center">
+      <div class="mb-3 flex content-center">
         <input
           type="checkbox"
           name="tag"
+          id="check1"
           value="leagues"
           checked
-          class="h-6 w-6"
+          class="h-6 w-6 inline"
         />
-        <span class="pl-2">
+        <label for="check1" class="pl-2 text-secondary hover:underline">
           Leagues
-        </span>
+        </label>
       </div>
-      <div class="mb-2 flex content-center">
+      <div class="mb-3 flex content-center">
         <input
           type="checkbox"
           name="tag"
+          id="check2"
           value="tournaments"
           checked
           class="h-6 w-6"
         />
-        <span class="pl-2">
+        <label for="check2" class="pl-2 text-secondary hover:underline">
           Tournaments
-        </span>
+        </label>
       </div>
       <div class="mb-4 flex content-center">
         <input
           type="checkbox"
           name="tag"
+          id="events"
           value="events"
           checked
           class="h-6 w-6"
         />
-        <span class="pl-2">
+        <label for="events" class="pl-2 text-secondary hover:underline">
           Clinics and Events
-        </span>
+        </label>
       </div>
     </div>
     <button
