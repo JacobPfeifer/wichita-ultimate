@@ -11,7 +11,7 @@
         <input name="bot-field" />
       </label>
     </div>
-        <div class="relative h-16 my-4 rounded-md box-border border border-solid border-secondary bg-white">
+    <div class="relative h-16 my-4 rounded-md box-border border border-solid border-secondary bg-white">
       <input
         class="absolute top-0 left-0 mt-8 pl-2 w-full focus:outline-none shadow-none bg-transparent"
         type="email"
@@ -28,65 +28,84 @@
         >Email
       </label>
     </div>
-    <div class="relative h-16 my-4 rounded-md box-border border border-solid border-secondary bg-white">
-      <input
-        class="absolute top-0 left-0 mt-8 pl-2 w-full focus:outline-none shadow-none bg-transparent"
-        type="text"
-        name="metadata__first"
-        id="metadata__first" 
-        autocomplete="given-name"
-        placeholder="Your First Name"
-        title="Please enter your first name"
-        required/>
-      <label
-        class="absolute top-0 left-0 pt-2 pl-2 text-xs text-secondary"
-        for="metadata__first"
-        >First Name
-      </label>
-    </div>
-    <div class="relative h-16 my-4 rounded-md box-border border border-solid border-secondary bg-white">
-      <input
-        class="absolute top-0 left-0 mt-8 pl-2 w-full focus:outline-none shadow-none bg-transparent"
-        type="text"
-        name="metadata__last"
-        id="metadata__last" 
-        autocomplete="family-name"
-        placeholder="Your Last Name"
-        title="Please enter your last name"
-        required/>
-      <label 
-        class="absolute top-0 left-0 pt-2 pl-2 text-xs text-secondary"
-        for="last-name"
-        >Last Name
-      </label>
+    <div class="flex my-4">
+      <div class="relative h-16 w-1/2 mr-4 rounded-md box-border border border-solid border-secondary bg-white">
+        <input
+          class="absolute top-0 left-0 mt-8 pl-2 w-full focus:outline-none shadow-none bg-transparent"
+          type="text"
+          name="metadata__first"
+          id="metadata__first" 
+          autocomplete="given-name"
+          placeholder="Your First Name"
+          title="Please enter your first name"
+          required/>
+        <label
+          class="absolute top-0 left-0 pt-2 pl-2 text-xs text-secondary"
+          for="metadata__first"
+          >First Name
+        </label>
+      </div>
+      <div class="relative h-16 w-1/2 rounded-md box-border border border-solid border-secondary bg-white">
+        <input
+          class="absolute top-0 left-0 mt-8 pl-2 w-full focus:outline-none shadow-none bg-transparent"
+          type="text"
+          name="metadata__last"
+          id="metadata__last" 
+          autocomplete="family-name"
+          placeholder="Your Last Name"
+          title="Please enter your last name"
+          required/>
+        <label 
+          class="absolute top-0 left-0 pt-2 pl-2 text-xs text-secondary"
+          for="last-name"
+          >Last Name
+        </label>
+      </div>
     </div>
     <div>
-      <h4>What do want to receive emails about?</h4>
-      <div>
+      <h4 class="mb-4">What do want to receive emails about?</h4>
+      <div class="mb-2 flex content-center">
         <input
           type="checkbox"
           name="tag"
           value="leagues"
           checked
-        />Upcoming Leagues
+          class="h-6 w-6"
+        />
+        <span class="pl-2">
+          Leagues
+        </span>
       </div>
-      <div>
+      <div class="mb-2 flex content-center">
         <input
           type="checkbox"
           name="tag"
           value="tournaments"
           checked
-        />Local Tournaments
+          class="h-6 w-6"
+        />
+        <span class="pl-2">
+          Tournaments
+        </span>
       </div>
-      <div>
+      <div class="mb-4 flex content-center">
         <input
           type="checkbox"
           name="tag"
           value="events"
           checked
-        />Clinics and Events
+          class="h-6 w-6"
+        />
+        <span class="pl-2">
+          Clinics and Events
+        </span>
       </div>
     </div>
-    <button type="submit" name="submit">SIGN UP</button>
+    <button
+      type="submit" 
+      name="submit"
+      class="px-12 py-2 bg-primary text-quinary rounded-md "
+      >SIGN UP
+    </button>
   </form>
 </div>
