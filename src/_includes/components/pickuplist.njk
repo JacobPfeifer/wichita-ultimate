@@ -1,6 +1,6 @@
 <section class="container">
 	{% for game in pickuplist %}
-		<article{% if game.url == url %} data-current="current item"{% endif %}>
+		<article {% if game.url == url %} data-current="current item"{% endif %}>
 		<div class=" bg-white rounded shadow-md p-4 mb-4">
 			<h3 class="mt-0">
 				<a href="{{ game.url | url }}">
@@ -11,13 +11,26 @@
 					{% endif %}
 				</a>
 			</h3>
+			{% if game.data.content %}
+			<div class="mb-4">
+				<span class=" text-lg">
+					{{ game.data.content | safe }}
+				</span>
+			</div>
+			{% endif %}
 			{% if game.data.skill %}
 			<div class="mb-4">
 				<label class="mb-2 flex text-xs text-gray-600 uppercase">
 					Skill Level
 				</label>
-				<span class="box-border px-4 py-1 border border-red-600 rounded text-red-600 font-medium bg-white">
-					{{ game.data.skill }}
+				<span class="
+					box-border px-4 py-1 border font-medium bg-white rounded
+					{% if game.data.skill == "Recreational" %} border-green-500 text-green-500 
+					{% elseif game.data.skill == "Intermediate" %} border-yellow-500 text-yellow-500
+					{% elseif game.data.skill == "Competitive"  %} border-orange-500 text-orange-500
+					{% endif %}
+					">
+						{{ game.data.skill }}
 				</span>
 			</div>
 			{% endif %}
@@ -26,8 +39,15 @@
 				<label class="mb-2 flex text-xs text-gray-600 uppercase">
 					Gender Ratio
 				</label>
-				<span class="px-4 py-1 border border-red-600 rounded text-red-600 font-medium bg-white">
-					{{ game.data.ratio }}
+				<span class=
+					"px-4 py-1 border rounded font-medium bg-white
+					{% if game.data.ratio == "Open" %} border-red-500 text-red-500
+					{% elseif game.data.ratio == "Mixed" %} border-pink-500 text-pink-500
+					{% elseif game.data.ratio == "Men's" %} border-purple-500 text-purple-500
+					{% elseif game.data.ratio == "Women's" %} border-blue-500 text-blue-500
+					{% endif %}
+					">
+						{{ game.data.ratio }}
 				</span>
 			</div>
 			{% endif %}
@@ -60,15 +80,6 @@
 					<a href="{{ game.data.discussion | url }}">{{ game.data.discussion }}</a>
 				</span>
 			</div>
-			{% endif %}
-			{% if game.data.content %}
-			<div class="mb-4">
-				<label class="mb-2 flex text-xs text-gray-600 uppercase">
-					Description
-				</label>
-			<span class=" text-lg">
-				{{ game.data.content | safe }}
-			</span>
 			{% endif %}
 		</div>
 		</article>

@@ -4,3 +4,4 @@ package-lock.json
 wichita-ultimate.code-workspace
 .env
 src/_tmp
+.vscode

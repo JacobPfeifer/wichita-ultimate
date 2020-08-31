@@ -2,7 +2,7 @@
 title: Garrett Park Sunday Evenings
 permalink: pickup/{{ title | slug }}/index.html
 name: Ben Chambers
-email: "benjc91@gmail.com "
+email: "benjc91@gmail.com"
 address: 1100 E Chet Smith Ave, Derby, KS 67037
 frequency: Sunday Evenings at 7:00pm
 ratio: Open
