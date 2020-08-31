@@ -64,6 +64,8 @@ collections:
     slug: "{{fields.title}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Skill Level", name: "skill", widget: "string"}
+      - {label: "Gender Ratio", name: "ratio", widget: "string"}
       - {label: "Mainainer's Name", name: "name", widget: "string"}
       - {label: "Maintainter's Email", name: "email", widget: "string"}
       - {label: "Address", name: "address", widget: "string"}

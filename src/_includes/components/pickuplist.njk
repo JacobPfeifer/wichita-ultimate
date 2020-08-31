@@ -1,7 +1,8 @@
-<section>
+<section class="container">
 	{% for game in pickuplist %}
 		<article{% if game.url == url %} data-current="current item"{% endif %}>
-			<h3>
+		<div class=" bg-white rounded shadow-md p-4 mb-4">
+			<h3 class="mt-0">
 				<a href="{{ game.url | url }}">
 					{% if game.data.title %}
 						{{ game.data.title }}
@@ -10,21 +11,66 @@
 					{% endif %}
 				</a>
 			</h3>
+			{% if game.data.skill %}
+			<div class="mb-4">
+				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+					Skill Level
+				</label>
+				<span class="box-border px-4 py-1 border border-red-600 rounded text-red-600 font-medium bg-white">
+					{{ game.data.skill }}
+				</span>
+			</div>
+			{% endif %}
+			{% if game.data.ratio %}
+			<div class="mb-4">
+				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+					Gender Ratio
+				</label>
+				<span class="px-4 py-1 border border-red-600 rounded text-red-600 font-medium bg-white">
+					{{ game.data.ratio }}
+				</span>
+			</div>
+			{% endif %}
 			{% if game.data.address %}
-				<p>
+			<div class="mb-4">
+				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+					Location
+				</label>
+				<span class="font-semibold">
 					{{ game.data.address }}
-				</p>
+				</span>
+			</div>
 			{% endif %}
             {% if game.data.frequency %}
-				<p>
+			<div class="mb-4">
+				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+					Time and Frequency
+				</label>
+				<span class="font-semibold">
 					{{ game.data.frequency }}
-				</p>
+				</span>
+			</div>
 			{% endif %}
             {% if game.data.discussion %}
-				<p>
-					{{ game.data.discussion }}
-				</p>
+			<div class="mb-4">
+				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+					Discussion
+				</label>
+				<span class="font-semibold">
+					<a href="{{ game.data.discussion | url }}">{{ game.data.discussion }}</a>
+				</span>
+			</div>
 			{% endif %}
+			{% if game.data.content %}
+			<div class="mb-4">
+				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+					Description
+				</label>
+			<span class=" text-lg">
+				{{ game.data.content | safe }}
+			</span>
+			{% endif %}
+		</div>
 		</article>
 	{% endfor %}
 </section>
