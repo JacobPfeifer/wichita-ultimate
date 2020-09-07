@@ -1,7 +1,7 @@
-<section class="container">
+<section class="container" {% if game.url == url %} data-current="current item"{% endif %}>
+	<h2 class="">Regularly Occuring Games</h2>
 	{% for game in pickuplist %}
-		<article {% if game.url == url %} data-current="current item"{% endif %}>
-		<div class=" bg-white rounded shadow-md p-4 mb-4">
+		<div class="bg-white rounded shadow-md p-4 mb-8">
 			<h3 class="mt-0">
 				<a href="{{ game.url | url }}">
 					{% if game.data.title %}
@@ -20,11 +20,11 @@
 			{% endif %}
 			{% if game.data.skill %}
 			<div class="mb-4">
-				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+				<label class="block mb-2 text-xs text-gray-600 uppercase">
 					Skill Level
 				</label>
 				<span class="
-					box-border px-4 py-1 border font-medium bg-white rounded
+					inline-block px-4 py-1 border font-medium bg-white rounded-full
 					{% if game.data.skill == "Recreational" %} border-green-500 text-green-500 
 					{% elseif game.data.skill == "Intermediate" %} border-yellow-500 text-yellow-500
 					{% elseif game.data.skill == "Competitive"  %} border-orange-500 text-orange-500
@@ -36,11 +36,11 @@
 			{% endif %}
 			{% if game.data.ratio %}
 			<div class="mb-4">
-				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+				<label class="block mb-2 text-xs text-gray-600 uppercase">
 					Gender Ratio
 				</label>
-				<span class=
-					"px-4 py-1 border rounded font-medium bg-white
+				<span class="
+					inline-block px-4 py-1 border font-medium bg-white rounded-full
 					{% if game.data.ratio == "Open" %} border-red-500 text-red-500
 					{% elseif game.data.ratio == "Mixed" %} border-pink-500 text-pink-500
 					{% elseif game.data.ratio == "Men's" %} border-purple-500 text-purple-500
@@ -53,10 +53,10 @@
 			{% endif %}
 			{% if game.data.address %}
 			<div class="mb-4">
-				<label class="mb-2 flex text-xs text-gray-600 uppercase">
+				<label class="block mb-2 text-xs text-gray-600 uppercase">
 					Location
 				</label>
-				<span class="font-semibold">
+				<span class="inline-block font-semibold">
 					{{ game.data.address }}
 				</span>
 			</div>
@@ -82,6 +82,5 @@
 			</div>
 			{% endif %}
 		</div>
-		</article>
 	{% endfor %}
 </section>

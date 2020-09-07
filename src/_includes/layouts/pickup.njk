@@ -4,10 +4,12 @@ section: pickup
 permalink: /pickup/index.html
 ---
 <div class="markdown container">
-    <h1>{{ title }}</h1>
     {{ layoutContent | safe }}
 </div>
 
 {% set pickuplist = collections.pickup %}
 {% include "components/pickuplist.njk" %}
-{% include "components/pickupform.njk" %}
+
+<div class="container">
+    <a href="/pickup/addgame">Add new pickup game or edit one that's already submitted</a>
+</div>
